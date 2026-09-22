@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Fasha ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- =====================================================
+     CINEMATIC SURPRISE INTRO
+     ===================================================== -->
+
+<div id="fashaCinematic">
+
+    <div class="fashaCinematic-stars"></div>
+
+    <div class="fashaCinematic-glow"></div>
+
+    <div class="fashaCinematic-content">
+
+        <div class="fashaCinematic-small">
+            A LITTLE SOMETHING FOR
+        </div>
+
+        <div class="fashaCinematic-name">
+            Fasha
+        </div>
+
+        <div class="fashaCinematic-line"></div>
+
+        <div class="fashaCinematic-subtitle">
+            Seseorang yag membuat duniaku
+            <br>
+            lebih indah dan berwarna
+        </div>
+
+        <button id="fashaCinematicStart">
+            <span>Open My Heart</span>
+            <b>♥</b>
+        </button>
+
+    </div>
+
+    <div class="fashaCinematic-bottom">
+        dibuat dari raffi yg penuh cinta ♡
+    </div>
+
+</div>
+
+<!-- =====================================================
+                    BACKGROUND
+===================================================== -->
+
+<div id="particles"></div>
+
+<div class="ambient ambient-1"></div>
+<div class="ambient ambient-2"></div>
+<div class="ambient ambient-3"></div>
+
+
+<!-- =====================================================
+                    INTRO SCREEN
+===================================================== -->
+
+<section id="intro" class="screen active">
+
+    <div class="intro-stars"></div>
+
+    <div class="intro-content">
+
+        <div class="small-title">
+            A LITTLE SURPRISE FOR YOU
+        </div>
+
+        <div class="intro-heart">
+            ❤️
+        </div>
+
+        <p class="intro-small">
+            Untuk seseorang yang sangat spesial...
+        </p>
+
+        <h1>
+            Untuk Sayangku,
+            <br>
+            <span>Fasha Ainin Nadifa</span>
+        </h1>
+
+        <p class="intro-description">
+            raffi menyiapkan sesuatu kecil untuk fasha.
+            <br>
+            Jadi sebelum lanjut...
+            <br>
+            <b>jangan buru-buru yaa ❤️</b>
+        </p>
+
+        <button id="startBtn" class="main-button">
+
+            <span>BUKA SURPRISE</span>
+
+            <span class="button-heart">
+                ❤️
+            </span>
+
+        </button>
+
+        <div class="scroll-hint">
+            tap untuk masuk ✨
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                    MAIN MENU
+===================================================== -->
+
+<section id="menu" class="screen">
+
+    <div class="menu-overlay"></div>
+
+    <header class="top-header">
+
+        <div class="logo">
+            FASHA <span>♥</span> RAFFI
+        </div>
+
+        <button id="musicButton" class="music-button">
+            ♪
+        </button>
+
+    </header>
+
+
+    <main class="menu-container">
+
+        <div class="menu-title">
+
+            <div class="mini-label">
+                WELCOME TO OUR LITTLE UNIVERSE
+            </div>
+
+            <h1>
+                Our Story
+                <span>❤️</span>
+            </h1>
+
+            <p>
+                Ada beberapa hal yang ingin aku tunjukkan
+                untuk kamu...
+            </p>
+
+        </div>
+
+
+        <!-- MENU CARDS -->
+
+        <div class="menu-grid">
+
+
+            <!-- FUTURE -->
+
+            <button
+                class="menu-card"
+                onclick="openPage('futurePage')"
+            >
+
+                <div class="menu-icon">
+                    💍
+                </div>
+
+                <div class="menu-info">
+
+                    <h3>
+                        Hari Bahagia Fasha
+                    </h3>
+
+                    <p>
+                        Hari ini sepenunya milikmu
+                    </p>
+
+                </div>
+
+                <div class="menu-arrow">
+                    →
+                </div>
+
+            </button>
+
+
+
+            <!-- LOVE LETTER -->
+
+            <button
+                class="menu-card"
+                onclick="openPage('lovePage')"
+            >
+
+                <div class="menu-icon">
+                    💌
+                </div>
+
+                <div class="menu-info">
+
+                    <h3>
+                        Untuk Fasha
+                    </h3>
+
+                    <p>
+                        Satu pesan untuk hari spesialmu
+                    </p>
+
+                </div>
+
+                <div class="menu-arrow">
+                    →
+                </div>
+
+            </button>
+
+
+
+            <!-- MEMORIES -->
+
+            <button
+                class="menu-card"
+                onclick="openPage('memoryPage')"
+            >
+
+                <div class="menu-icon">
+                    📸
+                </div>
+
+                <div class="menu-info">
+
+                    <h3>
+                        Kenangan Kita
+                    </h3>
+
+                    <p>
+                        Momen yang ingin aku simpan
+                    </p>
+
+                </div>
+
+                <div class="menu-arrow">
+                    →
+                </div>
+
+            </button>
+
+
+
+            <!-- HEART -->
+
+            <button
+                class="menu-card"
+                onclick="openPage('heartPage')"
+            >
+
+                <div class="menu-icon">
+                    💞
+                </div>
+
+                <div class="menu-info">
+
+                    <h3>
+                        My Heart
+                    </h3>
+
+                    <p>
+                        Lihat siapa yang ada di hatiku
+                    </p>
+
+                </div>
+
+                <div class="menu-arrow">
+                    →
+                </div>
+
+            </button>
+
+
+
+            <!-- BIRTHDAY -->
+
+            <button
+                class="menu-card birthday-card"
+                onclick="openPage('birthdayPage')"
+            >
+
+                <div class="menu-icon">
+                    🎂
+                </div>
+
+                <div class="menu-info">
+
+                    <h3>
+                        Birthday Wish
+                    </h3>
+
+                    <p>
+                        Doa kecilku untuk kamu
+                    </p>
+
+                </div>
+
+                <div class="menu-arrow">
+                    →
+                </div>
+
+            </button>
+
+
+
+            <!-- SECRET -->
+
+            <button
+                class="menu-card secret-card"
+                onclick="birthdaySurprise()"
+            >
+
+                <div class="menu-icon">
+                    🎁
+                </div>
+
+                <div class="menu-info">
+
+                    <h3>
+                        Secret Surprise
+                    </h3>
+
+                    <p>
+                        Jangan dibuka kalau belum siap...
+                    </p>
+
+                </div>
+
+                <div class="menu-arrow">
+                    →
+                </div>
+
+            </button>
+
+        </div>
+
+
+        <div class="menu-footer">
+
+            made with
+            <span>♥</span>
+            especially for you
+
+        </div>
+
+    </main>
+
+</section>
+
+
+
+<!-- =====================================================
+                    LOVE LETTER
+===================================================== -->
+
+<section id="lovePage" class="screen page-screen">
+
+    <button
+        class="back-button"
+        onclick="backToMenu()"
+    >
+        ← Kembali
+    </button>
+
+
+    <div class="page-wrapper">
+
+        <div class="page-number">
+            01
+        </div>
+
+        <div class="page-label">
+            A LETTER FROM MY HEART
+        </div>
+
+        <h1 class="page-title">
+            Untuk Sayangku ❤️
+        </h1>
+
+
+        <div class="letter">
+
+            <div class="letter-header">
+
+                <span>
+                    ♡
+                </span>
+
+                FASHA AININ NADIFA
+
+                <span>
+                    ♡
+                </span>
+
+            </div>
+
+
+            <div class="letter-content">
+
+                <p>
+                    Di hari ulang tahunmu ini, aku cuma ingin kamu tahu
+kalau kehadiran kamu adalah sesuatu yang sangat aku syukuri.
+Aku mungkin nggak selalu bisa memberikan semuanya,
+tapi aku ingin selalu menjadi seseorang
+yang ikut menjaga senyum kamu.
+Semoga di umur yang baru ini,
+lebih banyak hal baik datang kepadamu,
+lebih banyak alasan untuk tersenyum,
+dan lebih sedikit hal yang membuatmu sedih.
+Hari ini adalah harimu.
+Jadi, bahagialah sebanyak-banyaknya. ❤️
+                </p>
+
+               
+
+              
+            </div>
+
+
+            <div class="letter-signature">
+
+                #CalonIstri
+
+                <span>
+                    ❤️
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                    MEMORY PAGE
+===================================================== -->
+
+<section id="memoryPage" class="screen page-screen">
+
+    <button
+        class="back-button"
+        onclick="backToMenu()"
+    >
+        ← Kembali
+    </button>
+
+
+    <div class="page-wrapper memories-wrapper">
+
+        <div class="page-number">
+            02
+        </div>
+
+        <div class="page-label">
+            MOMENTS I WANT TO KEEP
+        </div>
+
+        <h1 class="page-title">
+            Kenangan Kita 📸
+        </h1>
+
+        <p class="page-subtitle">
+            Setiap foto punya cerita.
+            <br>
+            Klik salah satu kalo mau lebih besar fotonya
+        </p>
+
+
+        <div class="gallery">
+
+
+            <div class="photo-card">
+                <img
+                    src="fasha2.jpg"
+                    onclick="openGallery(0)"
+                >
+            </div>
+
+
+            <div class="photo-card">
+                <img
+                    src="fasha123.jpeg"
+                    onclick="openGallery(1)"
+                >
+            </div>
+
+
+            <div class="photo-card">
+                <img
+                    src="fasha4.jpeg"
+                    onclick="openGallery(2)"
+                >
+            </div>
+
+
+            <div class="photo-card">
+                <img
+                    src="fasha1234.jpeg"
+                    onclick="openGallery(3)"
+                >
+            </div>
+
+
+            <div class="photo-card">
+                <img
+                    src="fasha1212.jpeg"
+                    onclick="openGallery(4)"
+                >
+            </div>
+
+
+            <div class="photo-card">
+                <img
+                    src="fasha13.jpeg"
+                    onclick="openGallery(5)"
+                >
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                    GALLERY POPUP
+===================================================== -->
+
+<div id="galleryPopup" class="gallery-popup">
+
+    <button
+        class="gallery-close"
+        onclick="closeGallery()"
+    >
+        ✕
+    </button>
+
+
+    <button
+        class="gallery-nav gallery-prev"
+        onclick="prevPhoto()"
+    >
+        ❮
+    </button>
+
+
+    <div class="popup-photo-wrapper">
+
+        <img
+            id="popupPhoto"
+            src=""
+        >
+
+    </div>
+
+
+    <button
+        class="gallery-nav gallery-next"
+        onclick="nextPhoto()"
+    >
+        ❯
+    </button>
+
+
+    <div
+        id="photoNumber"
+        class="photo-number"
+    >
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+                    HEART PAGE
+===================================================== -->
+
+<section id="heartPage" class="screen heart-screen">
+
+    <canvas id="canvas"></canvas>
+
+    <div class="heart-background"></div>
+
+
+    <button
+        class="back-button heart-back"
+        onclick="backToMenu()"
+    >
+        ← Kembali
+    </button>
+
+
+    <div id="center">
+
+        <div class="heart-photo-wrapper">
+
+            <div class="heart-photo-ring">
+
+                <img
+                    src="fasha123456.jpeg"
+                    id="photo"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="page-label">
+            THE ONE IN MY HEART
+        </div>
+
+
+        <h2>
+            FASHA AININ NADIFA
+        </h2>
+
+
+        <p id="quote">
+            I LOVE YOU FOREVER ✨
+        </p>
+
+
+        <div class="heart-symbol">
+            ♥
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                    FUTURE PAGE
+===================================================== -->
+
+<section id="futurePage" class="screen page-screen">
+
+    <button
+        class="back-button"
+        onclick="backToMenu()"
+    >
+        ← Kembali
+    </button>
+
+
+    <div class="page-wrapper">
+
+        <div class="page-number">
+            03
+        </div>
+
+        <div class="page-label">
+            A QUESTION FOR MY FAVORITE PERSON
+        </div>
+
+
+        <div class="future-card">
+
+            <div class="ring-symbol">
+                💍
+            </div>
+
+            <h1>
+                Di umur barumu, boleh aku tetap ada di
+                <span>sampingmu</span>
+                sayang?
+            </h1>
+
+
+            <p>
+                Aku tahu perjalanan kita nggak selalu sempurna.
+                Ada tawa, ada salah paham, ada hari-hari yang nggak mudah.
+            </p>
+
+            <p>
+                Tapi dari semua itu, aku tetap menemukan satu hal
+                yang ingin aku pertahankan:
+                kamu.
+                Jadi di hari spesialmu ini, aku nggak mau cuma mengucapkan
+“selamat ulang tahun”.
+Aku ingin terus menemani kamu melewati
+hari ini, hari esok, dan banyak hari setelahnya. ❤️
+            </p>
+
+            <p>
+                Sehat-sehat yaa sayang ❤️
+            </p>
+
+
+            <div class="answer-buttons">
+
+                <button
+                    onclick="showForever()"
+                >
+                    ❤️ YES
+                </button>
+
+                <button
+                    onclick="showForever()"
+                >
+                    ❤️ ALWAYS YES
+                </button>
+
+            </div>
+
+
+            <small>
+                jawabannya sebenarnya sudah aku tahu...
+                😌
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                    BIRTHDAY PAGE
+===================================================== -->
+
+<section id="birthdayPage" class="screen page-screen">
+
+    <button
+        class="back-button"
+        onclick="backToMenu()"
+    >
+        ← Kembali
+    </button>
+
+
+    <div class="page-wrapper">
+
+        <div class="page-number">
+            04
+        </div>
+
+        <div class="page-label">
+            YOUR NEW CHAPTER
+        </div>
+
+
+        <div class="birthday-card">
+
+            <div class="birthday-icon">
+                🎂
+            </div>
+
+
+            <h1>
+                Happy Birthday,
+                <span>Sayang</span> ❤️
+            </h1>
+
+
+            <p>
+                Semoga semua hal baik menemukan kamu.
+            </p>
+
+
+            <div class="wish-text">
+
+                <p>
+                    Semoga langkahmu selalu dimudahkan,
+                    senyummu selalu terjaga, badanmu sehat,
+                    urusanmu dilancarkan.
+                </p>
+
+                <p>
+                    Semoga semua mimpi yang kamu simpan
+                    pelan-pelan menjadi nyata.
+                </p>
+
+                <p>
+                    Dan kalau suatu hari dunia terasa terlalu
+                    berat, ada rafdi disinii , semoga kamu ingat...
+                </p>
+
+                <p class="special-wish">
+                    ada aku yang selalu mendoakan kamu
+                    dan bangga melihat kamu terus berjuang.
+                </p>
+
+            </div>
+
+
+            <div class="wish-line">
+                ✦ buat mantanku tercinta ✦
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                    FOREVER POPUP
+===================================================== -->
+
+<div id="foreverPopup">
+
+    <div class="forever-content">
+
+        <div class="forever-stars">
+            ✦ ✦ ✦
+        </div>
+
+
+        <h1 id="typingTitle"></h1>
+
+
+        <p id="typingMessage"></p>
+
+
+        <h2 id="foreverText">
+            ❤️ FASHA + RAFFI ❤️
+        </h2>
+
+
+        <button
+            class="forever-close"
+            onclick="closeForever()"
+        >
+            ❤️ Kembali
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+                    SECRET BIRTHDAY
+===================================================== -->
+
+<div id="birthdayPopup">
+
+    <div class="birthday-popup-box">
+
+        <button
+            class="birthday-close"
+            onclick="closeBirthday()"
+        >
+            ✕
+        </button>
+
+
+        <div class="party-icon">
+            🎉
+        </div>
+
+
+        <div class="page-label">
+            ONE MORE THING...
+        </div>
+
+
+        <h1>
+            HAPPY BIRTHDAY
+            <br>
+            <span>FASHA AININ NADIFA</span>
+            🎂
+        </h1>
+
+
+        <p>
+            Selamat bertambah satu tahun,
+            sayangku.
+        </p>
+
+        <p>
+            Semoga tahun ini menjadi salah satu
+            tahun paling indah dalam hidupmu.
+        </p>
+
+
+        <div class="big-love">
+            I'M SO LUCKY
+            <br>
+            TO HAVE YOU.
+            ❤️
+        </div>
+
+
+        <button
+            class="main-button"
+            onclick="closeBirthday()"
+        >
+            Simpan di hati yaa ✨
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+                    JAVASCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
